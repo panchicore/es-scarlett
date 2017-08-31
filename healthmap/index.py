@@ -76,7 +76,7 @@ def get_alerts():
 if __name__ == '__main__':
     print datetime.datetime.today(), "- getting items"
     items = get_alerts()
-    print datetime.datetime.today(), "- indexing {0} items".format(items)
+    print datetime.datetime.today(), "- indexing {0} items".format(len(items))
     for item in items:
         index("alert", item)
-    print datetime.datetime.today(), "- indexed {0} items".format(items)
+    print datetime.datetime.today(), "- indexed {0} items".format(len(items))
