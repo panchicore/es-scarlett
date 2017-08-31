@@ -1,0 +1,16 @@
+{
+  "template": "healthmap",
+  "mappings": {
+    "alert": {
+      "properties": {
+        "@timestamp": {
+          "type": "date",
+          "format": "yyyy-MM-dd"
+        },
+        "location": {
+          "type": "geo_point"
+        }
+      }
+    }
+  }
+}
